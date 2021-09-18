@@ -66,14 +66,14 @@ var VFont = function () {
     this.width = true;
     this.weight = true;
     this.italic = true;
-    var title, str, chars = [];
+    var innerve_heading, str, chars = [];
 
     this.init = function () {
-        title = document.getElementById("title");
-        str = title.innerText;
-        title.innerHTML = "";
+        innerve_heading = document.getElementById("innerve_heading");
+        str = innerve_heading.innerText;
+        innerve_heading.innerHTML = "";
         for (var i = 0; i < str.length; i++) {
-            var _char = new Char(title, str[i]);
+            var _char = new Char(innerve_heading, str[i]);
             chars.push(_char);
         }
         this.set();
@@ -81,19 +81,19 @@ var VFont = function () {
     }
 
     this.set = function () {
-        title.className = "";
-        title.className += this.flex ? " flex" : "";
-        title.className += this.stroke ? " stroke" : "";
+        innerve_heading.className = "";
+        innerve_heading.className += this.flex ? " flex" : "";
+        innerve_heading.className += this.stroke ? " stroke" : "";
         this.setSize();
     }
 
     this.setSize = function () {
         var fontSize = window.innerWidth / (str.length /2 );  
-        title.style = "font-size: " + fontSize + "px;";
+        innerve_heading.style = "font-size: " + fontSize + "px;";
         if (this.scale) {
-            var scaleY = (window.innerHeight / title.getBoundingClientRect().height).toFixed(2);
+            var scaleY = (window.innerHeight / innerve_heading.getBoundingClientRect().height).toFixed(2);
             var lineHeight = scaleY * 0.8 ;
-            title.style = "font-size: " + fontSize + "px; transform: scale(1," + scaleY + "); line-height: " + lineHeight + "em;"
+            innerve_heading.style = "font-size: " + fontSize + "px; transform: scale(1," + scaleY + "); line-height: " + lineHeight + "em;"
         }
     }
 
@@ -105,7 +105,7 @@ var VFont = function () {
     }
 
     this.render = function () {
-        maxDist = title.getBoundingClientRect().width / 2;
+        maxDist = innerve_heading.getBoundingClientRect().width / 2;
         for (var i = 0; i < chars.length; i++) {
             chars[i].update({
                 wght: this.weight,
