@@ -145,6 +145,10 @@ h2.stroke span:after {
     content: "\a\a\a\a\a\a\a";
     white-space: pre;
   }
+
+  #no-gap::after{
+    height:-100px;
+  }
 }
 
 /*@media only screen and (max-width: 900px) {

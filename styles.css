@@ -655,18 +655,19 @@ body-footer {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
-    bottom: 0;
-  margin-top: 20px;
-  position: absolute;
+ bottom: 0;
+  left: 0;
+  right: 0;
+  top:-50px;
+  /*margin-top: 20px;*/
+  /*position: absolute;*/
   width: 100vw;
   /* height: 15vh; */
   
   }
   .mobile-footer .notice {
     display: none;
-    position: absolute;
+    position: relative;
     top: 10px;
     left: -1000px;
     width: 500px;
@@ -684,15 +685,16 @@ body-footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #DE5D83;
+    /*background: #DE5D83;*/
     flex-wrap: wrap;
-    position: fixed;
+    position: absolute;
     margin-bottom: 80px;
+    /*padding-top: 10px;*/
   }
 
   .content{
     /*padding: 0%;*/
-    height: 80px;
+    height: 30px;
   }
 }
 
