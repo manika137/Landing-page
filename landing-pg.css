@@ -13,7 +13,7 @@
 
 .section h2{
     text-align: center;
-    font-size: 3vw;
+    font-size: 14vw;
     padding: 0px;
    /* margin-top:-3vw;
     margin-left:-1vw;*/
@@ -55,79 +55,37 @@
 
 
 /*HEADING*/
-@font-face {
-	src: url('https://res.cloudinary.com/dr6lvwubh/raw/upload/v1529908256/CompressaPRO-GX.woff2');
-	font-family:'Compressa VF';
-	/*font-style: normal; */
-}
-
-html {
-	height:100vh;
-	overflow-x:hidden;
-}
-
-#innerve{   
-   /*bottom: 15%;*/
-	/*padding: 0;*/
-/*	margin: 0 auto;*/
-	overflow: hidden;
- /* background-color: #FFF5EE;*/
-	background-color: transparent;
-	display: flex;
-	justify-content: center;
-	height: 100vw;
-	align-items: center;
-}
-
-
 h2 {
-  /*background-color: #DE5D83;*/
-  /*background: linear-gradient(to right top, rgba(255, 255, 255, 0.4),#DE5D83);  */     
-  text-shadow: 4px 4px black;
+	 text-shadow: 6px 6px black;
   border-radius: 2rem;
   /*opacity:0.7;*/
   font-weight: 1000;
-	font-family:'Compressa VF';
-	text-rendering: optimizeSpeed;         
-	color: #DE5D83;
-	user-select: none;
-	line-height: 40vw;  /*h1 entire box*/
-	margin: 0 auto;
-	text-transform: uppercase;
-	text-align: center;
-	width: 100vw;  /*width of text*/
-}
+  font-family:'Compressa VF';
+ text-align: center;
+	 transition: all 0.2s;
+	 font-weight: 100;
+	 letter-spacing: 0.08em;
+   color: #DE5D83;
+  text-transform: uppercase;
+  text-align: center;
 
-span {
-    margin: auto;
-    font-size: 14vw;
-  } 
-  
-h2 span {
-	transform: translateY(-1vw);
-	user-select: none;
-}
 
-h2.flex {
-	display: flex;
-	justify-content: space-between;
 }
-
-h2.stroke span {
-	position: relative;
-	color: #DE5D83;
-	line-height: inherit;
+ h2:hover {
+	 font-weight: 900;
+	 letter-spacing: -0.06em;
 }
-h2.stroke span:after {
-	content: attr(data-char);
-	-webkit-text-stroke-width: 3px;
-	-webkit-text-stroke-color: #DE5D83;
-	position: absolute;
-	left: 0;
-	line-height: inherit;
-	color: transparent;
-	z-index: -1;
-} 
+ @keyframes fontWeight {
+	 0%, 70%, 100% {
+		 font-weight: 100;
+		 letter-spacing: 0.03em;
+	}
+	 20%, 50% {
+		 font-weight: 900;
+		 letter-spacing: -0.01em;
+	}
+}
+ 
 
 
 
