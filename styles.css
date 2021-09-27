@@ -655,10 +655,9 @@ body-footer {
     display: flex;
     justify-content: center;
     align-items: center;
- bottom: 0;
   left: 0;
   right: 0;
-  top:-50px;
+  z-index:-1;
   /*margin-top: 20px;*/
   /*position: absolute;*/
   width: 100vw;
@@ -668,10 +667,10 @@ body-footer {
   .mobile-footer .notice {
     display: none;
     position: relative;
-    top: 10px;
+    
     left: -1000px;
     width: 500px;
-    height: 30px;
+    
     padding: 5px;
     text-align: center;
     font-family: 'Shrikhand', cursive;
@@ -685,16 +684,17 @@ body-footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background: #DE5D83;*/
+    background: #DE5D83;
+   
     flex-wrap: wrap;
     position: absolute;
-    margin-bottom: 80px;
+   
     /*padding-top: 10px;*/
   }
 
   .content{
-    /*padding: 0%;*/
-    height: 30px;
+    padding: 0%;
+    height: 80px;
   }
 }
 
