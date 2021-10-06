@@ -59,12 +59,12 @@ h2 {
 	 text-shadow: 6px 6px black;
   border-radius: 2rem;
   /*opacity:0.7;*/
-  font-weight: 1000;
-  font-family:'Compressa VF';
+  font-weight: 100000;
+  font-family:'Verdana';
  text-align: center;
 	 transition: all 0.2s;
 	 font-weight: 100;
-	 letter-spacing: 0.08em;
+	 letter-spacing: 0.01em;
    color: #DE5D83;
   text-transform: uppercase;
   text-align: center;
